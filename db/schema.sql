@@ -1,0 +1,3 @@
+DROP DATABASE IF EXISTS diving_db;
+
+CREATE DATABASE diving_db;
