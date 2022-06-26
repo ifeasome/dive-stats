@@ -59,7 +59,7 @@ CREATE TABLE dives (
     location_id INTEGER NOT NULL REFERENCES locations(id) ON DELETE CASCADE
 );
 
---CUSTOM FUNCTION: random numbers between a high and low number--
+--CUSTOM FUNCTION: random number between a high and low number--
 CREATE FUNCTION random_between(low INT, high INT)
 RETURNS INT AS $$ 
 BEGIN 
