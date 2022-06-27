@@ -4,6 +4,10 @@ CREATE DATABASE diving_db;
 
 \c diving_db;
 
+--Indexing for foreign keys on Dives table--
+CREATE INDEX diver_index ON dives (diver_id);
+CREATE INDEX location_index ON dives (location_id);
+
 --UNSIGNED CUSTOM DATATPE--
 CREATE DOMAIN UNSIGNED AS INTEGER CHECK (VALUE > 0);
 
