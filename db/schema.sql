@@ -4,10 +4,6 @@ CREATE DATABASE diving_db;
 
 \c diving_db;
 
---Indexing for foreign keys on Dives table--
-CREATE INDEX diver_index ON dives (diver_id);
-CREATE INDEX location_index ON dives (location_id);
-
 --UNSIGNED CUSTOM DATATPE--
 CREATE DOMAIN UNSIGNED AS INTEGER CHECK (VALUE > 0);
 
@@ -62,6 +58,9 @@ CREATE TABLE dives (
     diver_id INTEGER NOT NULL REFERENCES divers(id) ON DELETE CASCADE,
     location_id INTEGER NOT NULL REFERENCES locations(id) ON DELETE CASCADE
 );
+--Indexing for foreign keys on Dives table--
+CREATE INDEX diver_index ON dives (diver_id);
+CREATE INDEX location_index ON dives (location_id);
 
 --CUSTOM FUNCTION: random number between a high and low number--
 CREATE FUNCTION random_between(low INT, high INT)
