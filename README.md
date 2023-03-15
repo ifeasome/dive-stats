@@ -31,7 +31,7 @@ To clone program's repo, run the following command line in your terminal/git bas
 To view repo, go to: [Application Repo](https://github.com/ifeasome/dive-stats).
 
 ## Usage 
-To use this app, change the number at the end of the deployed app link and watch the sorting algorithim change. 
+Follow the deployed app link to see the application. 
 
 [Deployed App](https://diving.tech-works.xyz/api/divers/)
 
